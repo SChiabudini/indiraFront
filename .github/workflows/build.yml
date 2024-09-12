@@ -8,6 +8,9 @@ on:
 jobs:
   build:
     runs-on: macos-latest
+    strategy:
+      matrix:
+        architecture: [x86_64, arm64]
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -23,8 +26,11 @@ jobs:
       - name: Build app
         run: npm run make  # O el comando que usas para construir tu aplicación
 
+      - name: Compress production artifacts
+        run: tar -czvf electron-app.tar.gz out/
+
       - name: Archive production artifacts
         uses: actions/upload-artifact@v3
         with:
           name: electron-app
-          path: out  # Ajusta esta ruta a donde se generen tus archivos
+          path: electron-app.tar.gz
