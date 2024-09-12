@@ -8,6 +8,9 @@ on:
 jobs:
   build:
     runs-on: macos-latest
+    strategy:
+      matrix:
+        architecture: [x86_64, arm64]
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
