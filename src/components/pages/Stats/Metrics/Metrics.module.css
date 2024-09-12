@@ -1,0 +1,10 @@
+.metrics {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.component{
+    width: 23%;
+    height: 100%;
+}

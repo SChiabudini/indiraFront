@@ -1,0 +1,363 @@
+/*--CSS RESET--*/
+
+html, body, div, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    /* vertical-align: baseline; */
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-spacing: 0;
+}
+
+/*--FONTS--*/
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('./assets/fonts/openSans/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('./assets/fonts/openSans/OpenSans-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('./assets/fonts/openSans/OpenSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('./assets/fonts/openSans/OpenSans-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('./assets/fonts/openSans/OpenSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('./assets/fonts/openSans/OpenSans-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/*--VARS--*/
+
+:root {
+    --white: #ffffff;
+    --light-grey: #f9f9f9;
+    --dark-grey: #3c3c3b;
+    --black: #000000;
+    --gold: #e4b61a;
+    --red: #ad0000;
+    --green: #00ad3a;
+    --border-light: solid 1px #f1f1f1;
+    --border-medium: solid 1px #e5e5e5;
+    --border-dark: solid 1px #b2b2b2;
+  }
+
+/*--ACTUAL CSS--*/
+
+body {
+  font-family: 'OpenSans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-grey);
+  overflow: hidden;
+}
+
+h2{
+    color: var(--gold);
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.page{
+    background-color: var(--light-grey);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.component {
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: var(--border-light);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Asegura que el componente ocupe toda la altura disponible */
+    overflow: hidden; /* Evita desbordamientos visuales */
+    display: flex; /* Para usar flexbox */
+    flex-direction: column; /* Columna para el diseño vertical */
+}
+
+.title {
+    border-bottom: var(--border-medium);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    
+    flex: 1; /* Para que ocupe todo el espacio disponible en la columna */
+    padding: 1.5rem;
+    box-sizing: border-box;
+    display: flex; /* Para usar flexbox */
+    flex-direction: column; /* Columna para el diseño vertical */
+    overflow: auto; /* Evita desbordamientos visuales */
+}
+
+button{
+    background-color: var(--dark-grey);
+    color: white;
+    border-radius: 2px;
+    padding: 0.5rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover, button.delete:hover{
+    background-color: #000000;
+}
+
+button:disabled {
+    background-color: var(--dark-grey); /* Color de fondo para el botón deshabilitado */
+    color: #ccc; /* Color del texto para el botón deshabilitado */
+    cursor: not-allowed; /* Cambia el cursor para indicar que no se puede interactuar con el botón */
+    opacity: 0.6; /* Cambia la opacidad para que el botón deshabilitado parezca más tenue */
+}
+
+.titleButtons{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.titleButtons button{
+    letter-spacing: 0.05rem;
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+}
+
+.titleButtons button a{
+    color: white;
+}
+
+button.delete{
+    background-color: var(--red);
+}
+
+button.add{
+    background-color: var(--green);
+}
+
+.titleButtons button:hover{
+    background-color: black;
+}
+
+.titleButtons button img{
+    width: 1rem;
+}
+
+/*--FORMS--*/
+
+form label{
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    font-size: 1rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--gold);
+  border-radius: 2px;
+  border: none;
+}
+
+
+
+/*--TABLES--*/
+
+.filterSearch {
+    border: none;
+    width: 6rem;
+    border-bottom: 1px solid #797979;
+    padding-right: 0px;
+    padding-bottom: 2px;
+    text-align: right;
+    font-size: 0.75rem;
+}
+
+.filterSearch::placeholder {
+    font-style: italic; 
+}
+
+.filterSearch:focus {
+    outline: none; 
+}
+
+.tableContainer {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    overflow-y: auto; /* Agrega scroll vertical */
+    border: var(--border-dark);
+    border-radius: 3px;
+}
+
+/* Personalización de la barra de desplazamiento */
+.tableContainer::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+.tableContainer::-webkit-scrollbar-track {
+    background: var(--light-grey); /* Color del fondo de la barra de desplazamiento */
+    border-radius: 10px; /* Redondea los bordes del fondo */
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+    background-color: var(--dark-grey); /* Color de la "thumb" (parte desplazable) */
+    border-radius: 10px; /* Redondea los bordes de la "thumb" */
+    border: 2px solid var(--light-grey); /* Espacio alrededor de la "thumb" */
+}
+
+.tableContainer::-webkit-scrollbar-thumb:hover {
+    background-color: var(--gold); /* Color de la "thumb" al pasar el mouse por encima */
+}
+
+/* Opcional: Personalización para Firefox */
+.tableContainer {
+    scrollbar-width: thin; /* Ancho de la barra de desplazamiento */
+    scrollbar-color: var(--dark-grey) var(--light-grey); /* Color de la "thumb" y del fondo */
+}
+
+/* Opcional: Personalización para IE y Edge */
+.tableContainer {
+    -ms-overflow-style: -ms-autohiding-scrollbar; /* Desaparece la barra de desplazamiento cuando no se usa */
+}
+
+table{
+    font-size: 0.75rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    font-weight: 600;
+}
+
+th.center, td.center{
+    text-align: center;
+}
+
+th, td{
+    border: var(--border-light);
+    padding: 0.5rem;
+}
+
+td a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+td a img.detailImg{
+    width: 1rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Color de fondo para filas pares */
+}
+
+tbody tr:hover {
+    background-color: #dddddd52; /* Color de fondo al pasar el mouse */
+}
+
+th div.withFilter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+th div.withFilter button.sort{
+    background: none;
+    color: var(--dark-grey);
+    padding: 0;
+}
+
+/*--PAGINATION--*/
+
+.pagination{
+     display: flex;
+     gap: 0.5rem;
+}
+
+.pagination button{
+    background-color: var(--light-grey);
+    color: var(--gold);
+    padding: 0.25rem 0.5rem;
+}
+
+.pagination button:hover, .pagination button.currentPage{
+    background-color: var(--dark-grey);
+}
+
+.pagination button:disabled{
+    color: var(--light-grey);
+    opacity: 1;
+    background-color: white;
+}

@@ -1,0 +1,101 @@
+/* DetailSale.module.css */
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Asegúrate de que los elementos hijos se alineen al principio */
+}
+
+.orderNumber {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 1px solid var(--gold);
+}
+
+.column {
+    height: 90%;
+    width: 50%;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.column p, .column div, .column div ul{
+    margin: 2rem 0;
+}
+
+.column div ul li{
+    margin: 1rem 0;
+}
+
+.column p{
+    display: flex;
+    align-items: center;
+}
+
+.column p a img{
+    width: 1rem;
+    margin-left: 0.5rem;
+}
+
+.column p span, .column div span{
+    font-weight: 600;
+}
+
+.column ul p{
+    margin: 1rem 0;
+}
+
+.column ul{
+    list-style: disc;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.column .productList{
+    list-style: '- ';
+}
+
+.column .productList li{
+    margin: 1rem 0;
+}
+
+.deleteModal{
+    display: none;
+    position: absolute;
+    width: calc(78% - 3rem);
+    height: calc(100% - 3rem);
+    background-color: rgba(220,220,220,0.8);
+}
+
+.deleteModalShow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteContent{
+    background-color: white;
+    width: 40%;
+    height: 20%;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.deleteContent p{
+    font-size: 1rem;
+}
+
+.deleteButtons{
+    display: flex;
+    gap: 1.5rem;
+}

@@ -1,0 +1,30 @@
+name: Build Electron App
+
+on:
+  push:
+    branches:
+      - main  # O la rama que prefieras para desencadenar la construcción
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'  # Puedes ajustar la versión de Node.js si es necesario
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build app
+        run: npm run make  # O el comando que usas para construir tu aplicación
+
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: electron-app
+          path: out  # Ajusta esta ruta a donde se generen tus archivos

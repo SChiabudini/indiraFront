@@ -1,0 +1,18 @@
+.metrics{
+    min-height: 38%;
+}
+
+.stats {
+    display: flex;
+    width: 100%;
+    height: calc(62% - 1.5rem);
+    justify-content: space-between;
+}
+
+.component, .middleComponent{
+    width: calc(33% - 1rem);
+}
+
+.middleComponent{
+    margin: 0 1.5rem;
+}

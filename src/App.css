@@ -1,0 +1,13 @@
+.App{
+    display: flex;
+}
+
+.SideBar{
+    width: 22%;
+    height: 100vh;
+}
+
+.content{
+    width: 78%;
+    height: 100vh;
+}

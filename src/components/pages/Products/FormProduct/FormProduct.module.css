@@ -1,0 +1,457 @@
+.productForm{
+    display: flex;
+}
+
+.containerMessage{
+    margin-bottom: 1em;
+}
+
+.mensagge{
+    font-size: 0.8em;
+    margin-bottom: 10em;
+}
+
+.column1{
+    width: 60%;
+}
+
+.column2{
+    width: 40%;
+}
+
+.rigthContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.rigthContainer label {
+    width: 25%;
+}
+
+.categoryContainer,
+.priceContainer,
+.descriptionContainer {
+  display: flex;
+  align-items: center;
+}
+
+/* ----------------- NOMBRE ----------------- */
+
+.nameTitle{
+    margin-right: 5px;
+}
+
+.inputName{
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+}
+
+/* ----------------- OTROS GRAL ----------------- */
+
+.detailProduct{
+    display: flex;
+}
+
+.list{
+    border-bottom: 1px solid #d4d4d4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spanList{
+    font-size: 0.75rem;
+    margin: 5px;
+    padding: 5px;
+}
+
+.buttonAdd {
+    background: none;
+    color: #e4b61a;
+    font-weight: bold;
+}
+
+.buttonDelete{
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.buttonDelete img{
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* ----------------- COLOR ----------------- */
+
+.colorContainer{
+    margin-top: 15px;
+    margin-right: 15px;
+    width: 26%;     
+}
+
+.colorCard{
+    margin-top: 10px;
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+}
+
+.colorCard ol{
+    max-height: 100px; 
+    overflow-y: auto;
+}
+
+.inputAddColor{
+    margin-left: 5px;
+    border: none;
+    justify-content: space-between;
+    align-items: center;    
+    width: 75%;
+}
+
+.inputAddColor input{
+    width: 100%;
+}
+
+.inputAddColor::placeholder {
+    font-style: italic; 
+}
+
+.inputAddColor:focus {
+    outline: none; 
+}
+
+.inputColorName{
+    margin-left: 5px;
+    border: none;
+    width: 6rem;
+    width: 75%;
+}
+
+/* ----------------- TALLE ----------------- */
+
+.sizeContainer{
+    margin-top: 15px;
+    margin-right: 15px;
+    width: 18%;
+}
+
+.sizeCard{
+    margin-top: 10px;
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+}
+
+.sizeCard ol{
+    max-height: 100px; 
+    overflow-y: auto;
+}
+
+.inputAddSize{
+    margin-left: 5px;
+    border: none;
+    width: 6rem;
+    justify-content: space-between;
+    align-items: center;    
+    width: 62%;
+}
+
+.inputAddSize input{
+    width: 100%;
+}
+
+.inputAddSize::placeholder {
+    font-style: italic; 
+}
+
+.inputAddSize:focus {
+    outline: none; 
+}
+
+.inputsizeName{
+    margin-left: 5px;
+    border: none;
+    width: 6rem;
+    width: 75%;
+}
+
+/* ----------------- MEDIDAS ----------------- */
+
+.measurementContainer{
+    margin-top: 15px;
+    margin-right: 15px;
+    width: 40%; 
+}
+
+.measurementCard{
+    margin-top: 10px;
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+}
+
+.inputsMeasurement{
+    margin: 5px;
+    justify-content: space-between;
+}
+
+.inputslabels{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.inputslabels input{
+    width: 40%;
+    border: 1px solid #b9b8b8;
+    border-radius: 3px;
+}
+
+.labelsMeasurement{
+    font-size: small;
+    margin-right: 5px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.buttonAddMeasurement{
+    width: 25%;
+    margin-left: 90px;
+}
+
+/* ----------------- STOCK ----------------- */
+
+.stockContainer{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    width: 95%;
+}
+
+.stockCard{
+    margin-top: 10px;
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+}
+
+.stockCard ol{
+    max-height: 130px; 
+    overflow-y: auto;
+}
+
+.inputsinMed{
+    width: 5%;
+    margin-left: 1px;
+    margin-right: 5px;
+    border: none;
+}
+
+.inputsinMed::-webkit-inner-spin-button,
+.inputsinMed::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.spansinMed{
+    font-size: 0.75rem;
+}
+
+.inputsinStock{
+    width: 10%;
+    margin-right: 10px;
+}
+
+/* ----------------- PROVEEDOR ----------------- */
+
+.supplierContainer{
+    margin-top: 10px;
+    /* display:grid; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.supplierContainer > div {
+    display: flex;
+    align-items: center;
+}
+
+.dataSupplierContainer label {
+    width: 12%;
+    margin-left: 10px;
+}
+
+.supplierTitle{
+    text-align: left;
+}
+
+/* ----------------- IMAGEN ----------------- */
+
+.imageContainer{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.imageTitleContainer{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.imageTitleContainer .labelImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 0px;
+    color: #e4b61a;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+}
+
+.butonImage{
+    background: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.addImage{
+    display: flex;
+    height: 25%;
+    width: 25%;
+}
+
+.checkboxContainer{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.spanImage{
+    font-size: 0.75rem;
+}
+
+.inputCheckbox {
+    cursor: pointer;
+}
+
+/* .inputCheckbox:checked {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 0;
+    border: 1px solid #929292;
+    border-radius: 2px;
+    width: 13px;
+    height: 13px;
+    background-color: red; 
+} */
+
+.imageComponent{
+    margin-top: 10px;
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+}
+
+.imageComponent ol{
+    max-height: 186px; 
+    overflow-y: auto;
+}
+
+.inputImage{
+    display: none;    
+}
+
+.labelImage{
+    cursor: pointer;
+    /* display: block; */
+}
+
+.imgProduct{
+    margin: 10px;
+    width: 20%;
+    height: 20%;
+}
+
+/* ----------------- CATEGORÍA ----------------- */
+
+.categoryContainer{
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.selectCategory{
+    width: 50%;
+}
+
+.containerAddCategory{
+    margin-bottom: 10px;
+}
+
+.buttonAddCategory{
+    background: none;
+    padding: 0;
+    margin-left: 5px;   
+    /* display: flex; */
+    /* justify-content: center; */
+    /* width: 25px; */
+    height: 0px;
+    color: #e4b61a;
+    /* font-weight: bold; */
+    font-size: 35px;
+}
+
+.buttonDeleteCategory{
+    background: none;
+    padding: 0;
+    margin-left: 5px;   
+    height: 0px;
+    color: #b60808e0;
+    font-size: 35px;
+}
+
+.addCategoryComponent{
+    position: absolute;
+    /* width: 25%; */
+    top: 10rem;
+    right: 1.5rem;
+    /* height: 11rem; */
+    display: none;
+}
+
+.addCategoryComponentBorder{
+    border: 1px solid #6e6e6e;
+    border-radius: 4px;
+    display: block;
+}
+/* ----------------- PRECIO ----------------- */
+
+.priceContainer{
+    margin-bottom: 15px;
+}
+
+/* ----------------- DESCRIPCION ----------------- */
+
+.descriptionContainer{
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.descriptionContainer textarea{
+    width: 50%;
+    padding: 3px;
+    min-height: 30px;
+}

@@ -1,0 +1,51 @@
+.containerCheckbox{
+    margin: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.containerInputCheckbox{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputCheckbox {
+    cursor: pointer;
+}
+
+.spanCheckbox{
+    font-size: 0.75rem;
+}
+
+.labelInput {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.labelInput .left{
+    width: 10%;
+}
+
+.labelInput .right{
+    width: 20%;
+}
+
+.inputPorcentage{
+    width: 98%;
+    height: 25px;
+    font-size: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.containerButtonSubmit{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

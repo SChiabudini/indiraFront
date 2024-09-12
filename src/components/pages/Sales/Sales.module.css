@@ -1,0 +1,7 @@
+.form{
+    min-height: 50%;
+}
+
+.history{
+    height: calc(50% - 1.5rem);
+}

@@ -1,0 +1,55 @@
+.inactive{
+    opacity: 0.3;
+}
+
+.tdInside{
+    padding: 0;
+}
+
+.containerInfoGral{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nameProduct{
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.containerColor{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.tdContainerImage{
+    width: 100px; 
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden;  */ /* Oculta cualquier parte de la imagen que sobresalga del contenedor */
+}
+
+.imageProduct{
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Ajusta la imagen para llenar el contenedor sin deformar */
+}
+
+.containerSize{
+    align-items: center;
+    justify-content: center;
+    /* border-bottom: solid 1px #f1f1f1; */
+}
+
+.containerSizeName{
+    margin: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,40 @@
+.titleForm{
+    border-bottom: var(--border-medium);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titleDeleteForm{
+    color:#ad0000;
+}
+
+.buttonOnClose{
+    background: none;
+    border: none;
+    padding: 5px;
+    color: #b2b2b2;
+    font-size: large;
+}
+
+.nameTitle{
+    margin-right: 5px;
+}
+
+.containerButton{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.errorMessage{
+    margin-top: 5px;
+    font-size: 0.8em;
+    color: #ad0000;
+}
+
+.selectCategory{
+    width: 60%;
+}

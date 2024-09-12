@@ -1,0 +1,91 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Asegúrate de que los elementos hijos se alineen al principio */
+    gap: 3rem;
+}
+
+.orderNumber {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 1px solid var(--gold);
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.row p span, .row div span{
+    font-weight: 600;
+}
+
+.row form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.row p a img, .section ul img, .section .productSelectorDiv button img{
+    width: 1rem;
+    margin-left: 0.5rem;
+}
+
+.column {
+    width: 48%;
+}
+
+.column p span, .column div span, .row form .column .section label span{
+    font-weight: 600;
+}
+
+.section label.products{
+    margin-bottom: 1rem !important;
+}
+
+.section p{
+    margin-bottom: 1rem;
+}
+
+.section p label{
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+.section ul{
+    list-style: disc;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 500;
+}
+
+.section ul li{
+    margin: 0.5rem 0;
+}
+
+.section ul button, .section .productSelectorDiv button {
+    background: none;
+    padding: 0;
+}
+
+.section button{
+    font-size: 0.75rem;
+}
+
+.section .productSelector{
+    width: 92%;
+}
+
+.section .productSelectorDiv{
+    margin-top: 0.75rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}

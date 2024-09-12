@@ -1,0 +1,22 @@
+.containerTopFive {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+
+
+.ratingNumber{
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    font-size: 2em;
+    color: #bababa;
+}
+
+.productName{
+    font-size: 17px;
+    font-weight: bold;
+}

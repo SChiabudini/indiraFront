@@ -1,0 +1,34 @@
+.content{
+    padding: 2rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.content p{
+    letter-spacing: 0.05rem;
+    margin: 0;
+}
+
+p.orderNumber{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 1px solid var(--gold);
+}
+
+.column{
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.key{
+    font-weight: 600;
+}

@@ -1,0 +1,172 @@
+.salesForm{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.salesForm .column1, .salesForm .column2{
+    width: 33%;
+}
+
+.salesForm .column3{
+    width: 25%;
+}
+
+.salesForm .column1{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.salesForm .column1 .labelInput{
+    display: flex;
+    align-items: center;
+}
+
+.salesForm .column1 .labelInput .left{
+    width: 40%;
+}
+
+.salesForm .column1 .labelInput .right{
+    width: 60%;
+}
+
+.salesForm .column1 select, .salesForm .column1 input.discount{
+    width: 100%;
+    box-sizing: border-box;
+    height: 1.75rem;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    border: lightgrey solid 1px;
+    border-radius: 4px;
+}
+
+.salesForm .column1 input.discount{
+    text-align: right;
+}
+
+.salesForm .column1 .right .clientInput{
+    position: relative;
+}
+
+.salesForm .column1 .right .soldAt{
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+}
+
+.salesForm .addClient{
+    background: none;
+    border: none;
+    padding: 0;
+    position: absolute;
+    right: -2.2rem;
+    top: 0;
+}
+
+.salesForm .addClient img{
+    width: 2rem;
+}
+
+.salesForm .column2 label{
+    margin-bottom: 0.5rem;
+}
+
+.salesForm .column2 .product{
+    margin-top: 0.75rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.salesForm .column2 .product .productSelect{
+    width: 92%;
+}
+
+.salesForm .removeProduct{
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.salesForm .removeProduct img{
+    width: 0.75rem;
+}
+
+.salesForm .column3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    font-size: 1rem;
+}
+
+.salesForm .column3 .subtotal, .column3 .discount, .column3 .total{
+    display: flex;
+    border-bottom: var(--border-light);
+    padding-bottom: 0.75rem;
+}
+
+.salesForm .column3 .left{
+    width: 70%;
+}
+
+.salesForm .column3 .right{
+    width: 30%;
+}
+
+.salesForm .column3 .left{
+    text-align: left;
+}
+
+.salesForm .column3 .right{
+    text-align: right;
+}
+
+.salesForm .column3 .total{
+    font-weight: 400;
+    border-bottom: none;
+}
+
+.salesForm .column3 .total .left{
+    color: var(--gold);
+}
+
+.addClientComponent{
+    position: absolute;
+    width: 55%;
+    top: 10rem;
+    right: 1.5rem;
+    height: 13rem;
+    display: none;
+}
+
+.addClientComponentBorder{
+    border: 1px solid #6e6e6e;
+    border-radius: 4px;
+    display: block;
+}
+
+.newSaleModal button{
+    height: 100%;
+    font-size: 0.5rem;
+    background-color: var(--red);
+}
+
+.buttonOnClose{
+    background: none;
+    border: none;
+    padding: 5px;
+    color: var(--red);
+    font-size: large;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.buttonOnClose:hover{
+    background: none;
+}
